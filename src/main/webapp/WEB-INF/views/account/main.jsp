@@ -7,11 +7,6 @@
 <link href="<%=request.getContextPath()%>/assets/images/favicon.png" type="image/x-icon" rel="shortcut icon"/>
 <link href="<%=request.getContextPath()%>/assets/images/favicon.png" type="image/x-icon" rel="icon"/>
 
-<link href="<%=request.getContextPath()%>/assets/css/ui.totop.css" rel="stylesheet" media="screen,projection" />
-
-<link rel="stylesheet" href="<%=request.getContextPath()%>/assets/css/bootstrap.css" type="text/css"></link>
-<link rel="stylesheet" href="<%=request.getContextPath()%>/assets/css/carousel.css" type="text/css"></link>
-<link rel="stylesheet" href="<%=request.getContextPath()%>/assets/css/ya2dan.css" type="text/css"></link>
 </head>
 <style type="text/css" media="screen">
 .main-info {
@@ -32,7 +27,6 @@
 	 */
 }
 .account-base {
-	height: 300px;
 	padding: 10px 15px 10px 15px;
 	margin: 0px auto 10px;
 	font-size: 14px;
@@ -60,8 +54,9 @@
 		            	<div class="panel panel-default">
 		                    <div class="panel-heading">
 		                        <h4 class="panel-title">
-		                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo1"><span class="glyphicon glyphicon-th">
-		                            </span>我的钱多多</a>
+		                            <a href="<%=request.getContextPath()%>/account/main" data-toggle="collapse" data-parent="#accordion" href="#collapse">
+		                            	<span class="glyphicon glyphicon-home"></span>我的主页
+		                            </a>
 		                        </h4>
 		                    </div>
 		                </div>
@@ -69,32 +64,26 @@
 		                <div class="panel panel-default">
 		                    <div class="panel-heading">
 		                        <h4 class="panel-title">
-		                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
-		                            </span>资产管理</a>
+		                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span class="glyphicon glyphicon-th">
+		                            </span>资金管理</a>
 		                        </h4>
 		                    </div>
-		                    <div id="collapseOne" class="panel-collapse collapse in">
+		                    <div id="collapse1" class="panel-collapse collapse">
 		                        <div class="panel-body">
 		                            <table class="table">
 		                                <tr>
 		                                    <td>
-		                                        <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">交易记录</a>
+		                                        <a href="http://www.jquery2dotnet.com">交易记录</a> <span class="label label-success">$ 320</span>
 		                                    </td>
 		                                </tr>
 		                                <tr>
 		                                    <td>
-		                                        <span class="glyphicon glyphicon-flash text-success"></span><a href="http://www.jquery2dotnet.com">充值</a>
+		                                        <a href="http://www.jquery2dotnet.com">充值</a>
 		                                    </td>
 		                                </tr>
 		                                <tr>
 		                                    <td>
-		                                        <span class="glyphicon glyphicon-file text-info"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
-		                                    </td>
-		                                </tr>
-		                                <tr>
-		                                    <td>
-		                                        <span class="glyphicon glyphicon-comment text-success"></span><a href="http://www.jquery2dotnet.com">Comments</a>
-		                                        <span class="badge">42</span>
+		                                        <a href="http://www.jquery2dotnet.com">提现</a>
 		                                    </td>
 		                                </tr>
 		                            </table>
@@ -104,16 +93,21 @@
 		                <div class="panel panel-default">
 		                    <div class="panel-heading">
 		                        <h4 class="panel-title">
-		                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+		                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class="glyphicon glyphicon-stats">
 		                            </span>理财管理</a>
 		                        </h4>
 		                    </div>
-		                    <div id="collapseTwo" class="panel-collapse collapse">
+		                    <div id="collapse2" class="panel-collapse collapse">
 		                        <div class="panel-body">
 		                            <table class="table">
 		                                <tr>
 		                                    <td>
-		                                        <a href="http://www.jquery2dotnet.com">企业直投</a> <span class="label label-success">$ 320</span>
+		                                        <a href="http://www.jquery2dotnet.com">我的债权</a> <span class="label label-success">$ 320</span>
+		                                    </td>
+		                                </tr>
+		                                <tr>
+		                                    <td>
+		                                        <a href="http://www.jquery2dotnet.com">优选理财计划</a>
 		                                    </td>
 		                                </tr>
 		                                <tr>
@@ -123,12 +117,42 @@
 		                                </tr>
 		                                <tr>
 		                                    <td>
-		                                        <a href="http://www.jquery2dotnet.com">Shipments</a>
+		                                        <a href="http://www.jquery2dotnet.com">理财统计</a>
 		                                    </td>
 		                                </tr>
 		                                <tr>
 		                                    <td>
-		                                        <a href="http://www.jquery2dotnet.com">Tex</a>
+		                                        <a href="http://www.jquery2dotnet.com">自动投标工具</a>
+		                                    </td>
+		                                </tr>
+		                            </table>
+		                        </div>
+		                    </div>
+		                </div>
+		                
+		                <div class="panel panel-default">
+		                    <div class="panel-heading">
+		                        <h4 class="panel-title">
+		                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><span class="glyphicon glyphicon-user">
+		                            </span>借款管理</a>
+		                        </h4>
+		                    </div>
+		                    <div id="collapse3" class="panel-collapse collapse">
+		                        <div class="panel-body">
+		                            <table class="table">
+		                                <tr>
+		                                    <td>
+		                                        <a href="http://www.jquery2dotnet.com">我的借款</a>
+		                                    </td>
+		                                </tr>
+		                                <tr>
+		                                    <td>
+		                                        <a href="http://www.jquery2dotnet.com">借款申请查询</a> <span class="label label-info">5</span>
+		                                    </td>
+		                                </tr>
+		                                <tr>
+		                                    <td>
+		                                        <a href="http://www.jquery2dotnet.com">借款统计</a>
 		                                    </td>
 		                                </tr>
 		                            </table>
@@ -138,32 +162,31 @@
 		                <div class="panel panel-default">
 		                    <div class="panel-heading">
 		                        <h4 class="panel-title">
-		                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
-		                            </span>Account</a>
+		                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><span class="glyphicon glyphicon-file">
+		                            </span>账户管理</a>
 		                        </h4>
 		                    </div>
-		                    <div id="collapseThree" class="panel-collapse collapse">
+		                    <div id="collapse4" class="panel-collapse collapse">
 		                        <div class="panel-body">
 		                            <table class="table">
 		                                <tr>
 		                                    <td>
-		                                        <a href="http://www.jquery2dotnet.com">Change Password</a>
+		                                        <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">个人基础信息</a>
 		                                    </td>
 		                                </tr>
 		                                <tr>
 		                                    <td>
-		                                        <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+		                                        <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">认证信息</a>
 		                                    </td>
 		                                </tr>
 		                                <tr>
 		                                    <td>
-		                                        <a href="http://www.jquery2dotnet.com">Import/Export</a>
+		                                        <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">安全信息</a>
 		                                    </td>
 		                                </tr>
 		                                <tr>
 		                                    <td>
-		                                        <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
-		                                            Delete Account</a>
+		                                        <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">银行卡信息</a>
 		                                    </td>
 		                                </tr>
 		                            </table>
@@ -173,31 +196,21 @@
 		                <div class="panel panel-default">
 		                    <div class="panel-heading">
 		                        <h4 class="panel-title">
-		                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
-		                            </span>Reports</a>
+		                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5"><span class="glyphicon glyphicon-envelope">
+		                            </span>消息管理</a>
 		                        </h4>
 		                    </div>
-		                    <div id="collapseFour" class="panel-collapse collapse">
+		                    <div id="collapse5" class="panel-collapse collapse">
 		                        <div class="panel-body">
 		                            <table class="table">
 		                                <tr>
 		                                    <td>
-		                                        <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+		                                        <span class="glyphicon glyphicon-comment"></span><a href="http://www.jquery2dotnet.com">站内消息</a>
 		                                    </td>
 		                                </tr>
 		                                <tr>
 		                                    <td>
-		                                        <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
-		                                    </td>
-		                                </tr>
-		                                <tr>
-		                                    <td>
-		                                        <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
-		                                    </td>
-		                                </tr>
-		                                <tr>
-		                                    <td>
-		                                        <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
+		                                        <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">通知设置</a>
 		                                    </td>
 		                                </tr>
 		                            </table>
@@ -206,23 +219,147 @@
 		                </div>
 		            </div>
 		        </div>
+		        
 		        <div class="col-sm-9 col-md-9">
 		            <div class="main-body">
+		            	<!-- 
 		            	<div>
 					        <ul class="breadcrumb">
-					          <li><a href="#">我的钱多多</a> <span class="divider">/</span></li>
-					          <li><a href="#">Library</a> <span class="divider">/</span></li>
-					          <li class="active">Data</li>
+					          <li><a href="#">我的主页</a></li>
 					        </ul>
 					    </div>
+		            	 -->
 					    <div class="account-base">
-					    	Welcome to Bootsnipp, home of free HTML snippets for
+					    	<h4>吴新成</h4>
+							
+							账户余额：<label class="ya2dan-error-b">5,000.00</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<button type="button" class="btn btn-success">充值</button>
+							<button type="button" class="btn btn-info">提现</button>
+							<br>
+							安全等级：
+					    	<div class="progress">
+								<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+							    	60%
+							  	</div>
+							</div>
+					    	
+							
+					    </div>
+					    
+					    <div class="alert alert-info" style="margin-bottom: 1px;">
+					    	<div class="pull-left">
+								<a href="#" class="left"><b>理财账户</b></a>
+							</div>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							已赚总金额：0.00元
+							
+							<div class="pull-right">
+								<a href="#"><b>回账查询</b></a>
+							</div>
+						</div>
+					    <div class="account-base">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>理财方式</th>
+										<th>账户资产</th>
+										<th>已赚金额</th>
+										<th>加权平均收益率</th>
+										<th>持有数量</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="success">
+										<td>债权投资</td>
+										<td>0.00元</td>
+										<td>0.00元</td>
+										<td>0.0%</td>
+										<td>0</td>
+										<td><button type="button" class="btn btn-primary">查看</button></td>
+									</tr>
+									<tr class="warning">
+										<td>优选理财计划</td>
+										<td>0.00元</td>
+										<td>0.00元</td>
+										<td>0.0%</td>
+										<td>0</td>
+										<td><button type="button" class="btn btn-primary">查看</button></td>
+									</tr>
+								</tbody>
+							</table>
+					    </div>
+					    
+					    <div class="alert alert-info" style="margin-bottom: 1px;">
+					    	<div class="pull-left">
+								<a href="#" class="left"><b>借款账户</b></a>
+							</div>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							待还总金额：0.00元
+							
+							<div class="pull-right">
+								<a href="#"><b>申请查询</b></a>
+							</div>
+						</div>
+					    <div class="account-base">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>借款标题</th>
+										<th>待还本金</th>
+										<th>待还利息/管理费</th>
+										<th>逾期费用</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="success">
+										<td>债权投资</td>
+										<td>0.00元</td>
+										<td>0.00元</td>
+										<td>0.0%</td>
+									</tr>
+									<tr class="warning">
+										<td>优选理财计划</td>
+										<td>0.00元</td>
+										<td>0.00元</td>
+										<td>0.0%</td>
+									</tr>
+								</tbody>
+							</table>
 					    </div>
 					    <div class="account-base">
-					    	Welcome to Bootsnipp, home of free HTML snippets for
-					    </div>
-					    <div class="account-base">
-					    	Welcome to Bootsnipp, home of free HTML snippets for
+					    	<h4>理财推荐</h4>
+					    	<label class="ya2dan-primary-b">优选理财计划0056期</label>
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>借款标题</th>
+										<th>信用等级</th>
+										<th>年利率</th>
+										<th>金额</th>
+										<th>期限</th>
+										<th>进度</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="success">
+										<td>债权投资</td>
+										<td>0.00元</td>
+										<td>0.00元</td>
+										<td>0.00元</td>
+										<td>0.00元</td>
+										<td>0.0%</td>
+									</tr>
+									<tr class="warning">
+										<td>优选理财计划</td>
+										<td>0.00元</td>
+										<td>0.00元</td>
+										<td>0.00元</td>
+										<td>0.00元</td>
+										<td>0.0%</td>
+									</tr>
+								</tbody>
+							</table>
 					    </div>
 		            </div>
 		        </div>

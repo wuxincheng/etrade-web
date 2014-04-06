@@ -47,10 +47,16 @@ body{
 	font-size: 14px;
 	color: #d0d0d0;
 	border: 1px solid #F0F0F0;
+	background-color: #FCFCFC;
 	/** 
-	background-color: #F0F0F0;
 	font-weight: bold;
 	 */
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+			border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 20px gray;
+	   -moz-box-shadow: 0px 0px 20px gray;
+			box-shadow: 0px 0px 20px gray;
 }
 
 .bottom-info {
@@ -382,7 +388,7 @@ body{
 					<li><a><span class="ya2dan-font1">客服热线：400-8055-855（接听时间:工作日9:00~18:00）</span></a></li>
 					<li <c:if test="${'index' eq flag}">class="active"</c:if>><a href="<%=request.getContextPath()%>/index/">首页</a></li>
 					
-					<li class="dropdown" <c:if test="${'account' eq flag}">class="active"</c:if>>
+					<li <c:if test="${'account' eq flag}">class="active"</c:if> class="dropdown" >
 						<a class="js-activated" role="button" data-toggle="dropdown" href="#">我的钱多多 <b class="caret"></b></a>
 		                <ul class="dropdown-menu">
 							<li><a href="<%=request.getContextPath()%>/account/main">我的主页</a></li>
@@ -410,41 +416,31 @@ body{
 		<div class="ya2dan-container">
 		<div class="bs-example">
 			<ul class="nav nav-pills navbar-left">
-				<li><a href="#">这里显示钱多多的Logo </a></li>
-			</ul>
-		
-			<ul class="nav nav-pills navbar-right">
 				<!-- 
 				<li class="active"><a href="#">首页</a></li>
 				 -->
 				<li class="dropdown">
 					<a id="drop4" role="button" class="js-activated" data-toggle="dropdown" href="#">我要理财 <b class="caret"></b></a>
-					<ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-						<li role="presentation" class="divider"></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+					<ul id="menu1" class="dropdown-menu" style="min-width: 130px;" role="menu" aria-labelledby="drop4">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">优选理财计划</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">散标投资列表</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">债权转让列表</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
 					<a id="drop5" role="button" class="js-activated" data-toggle="dropdown" href="#">我要借款 <b class="caret"></b></a>
-					<ul id="menu2" class="dropdown-menu" role="menu"
-						aria-labelledby="drop5">
-						<li role="presentation"><a role="menuitem" tabindex="-1"
-							href="http://twitter.com/fat">Action</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1"
-							href="http://twitter.com/fat">Another action</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1"
-							href="http://twitter.com/fat">Something else here</a></li>
-						<li role="presentation" class="divider"></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1"
-							href="http://twitter.com/fat">Separated link</a></li>
+					<ul id="menu2" class="dropdown-menu" style="min-width: 106px;" role="menu" aria-labelledby="drop5">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">工薪贷</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">生意贷</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">网商贷</a></li>
 					</ul></li>
 				<li><a href="#">新手指导 </a></li>
 				<li><a href="#">关于我们 </a></li>
 			</ul>
-			<!-- /pills -->
+			
+			<ul class="nav nav-pills navbar-right">
+				<li><a href="#">这里显示钱多多的Logo </a></li>
+			</ul>
 		</div>
 		</div>
 		<!-- /example -->
