@@ -246,7 +246,7 @@
 							
 					    </div>
 					    
-					    <div class="alert alert-info" style="margin-bottom: 1px;">
+					    <div class="alert alert-info" style="margin-bottom: 8px;">
 					    	<div class="pull-left">
 								<a href="#" class="left"><b>理财账户</b></a>
 							</div>
@@ -290,7 +290,7 @@
 							</table>
 					    </div>
 					    
-					    <div class="alert alert-info" style="margin-bottom: 1px;">
+					    <div class="alert alert-info" style="margin-bottom: 8px;">
 					    	<div class="pull-left">
 								<a href="#" class="left"><b>借款账户</b></a>
 							</div>
@@ -327,8 +327,11 @@
 								</tbody>
 							</table>
 					    </div>
+					    
+					    <div class="alert alert-info" style="margin-bottom: 8px;">
+					    	<a href="#" class="left"><b>理财推荐</b></a>
+						</div>
 					    <div class="account-base">
-					    	<h4>理财推荐</h4>
 					    	<label class="ya2dan-primary-b">优选理财计划0056期</label>
 							<table class="table table-striped">
 								<thead>
